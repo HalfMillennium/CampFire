@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coincalc.anduril.fabler">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.coincalc.anduril.fabler.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.coincalc.anduril.fabler.ViewStories"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_view_stories" />
+        <activity android:name="com.coincalc.anduril.fabler.StoryEntries"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.coincalc.anduril.fabler.SignUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.coincalc.anduril.fabler.NewEntry"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.coincalc.anduril.fabler.SignInActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.coincalc.anduril.fabler.CreateNew"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.coincalc.anduril.fabler.DetailsPopup"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomPopup"></activity>
+        <activity android:name="com.coincalc.anduril.fabler.ForgotPassword"
+            android:screenOrientation="portrait"></activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id"/>
+    </application>
+
+</manifest>
